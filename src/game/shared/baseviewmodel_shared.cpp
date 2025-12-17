@@ -459,9 +459,12 @@ void CBaseViewModel::CalcViewModelView( CBasePlayer *owner, const Vector& eyePos
 float g_fMaxViewModelLag = 1.5f;
 
 ConVar sv_viewmodel_lag_do_angles( "sv_viewmodel_lag_do_angles", "1", FCVAR_CHEAT | FCVAR_REPLICATED );
-
+ConVar xga_viewmodel_lag_enable("xga_viewmodel_lag_enable","0", FCVAR_ARCHIVE);
 void CBaseViewModel::CalcViewModelLag( Vector& origin, QAngle& angles, QAngle& original_angles )
 {
+	if (!xga_viewmodel_lag_enable.GetBool()) {
+		return;
+	}
 	Vector vOriginalOrigin = origin;
 	QAngle vOriginalAngles = angles;
 

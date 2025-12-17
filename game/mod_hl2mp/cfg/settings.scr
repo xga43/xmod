@@ -32,7 +32,7 @@
 
 
 // Half-Life Server Configuration Layout Script (stores last settings chosen, too)
-// File generated:  Tue Dec 16 11:30:42 PM
+// File generated:  Wed Dec 17 06:11:13 AM
 //
 //
 // Cvar	-	Setting
@@ -45,7 +45,7 @@ DESCRIPTION SERVER_OPTIONS
 	{
 		"#Valve_Hostname"
 		{ STRING }
-		{ "XGA's Server" }
+		{ "Fuwawa Abyssgard's Server" }
 	}
 
 	"sv_password"
